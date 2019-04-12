@@ -206,7 +206,7 @@ public class FlightController {
 	 * lista de vuelos organizados  invocando el metodo insertionSortTime que ordena mediante el 
 	 * ALGORITMO DE INSERCION<br>
 	 * @param event:ActionEvent
-     * <b>post: </b>Genera la lista de vuelos ordenada por TIME 
+     * <b>post: </b>Genera la lista de vuelos ordenada por DATE 
      */
     @FXML
     public void sortByDate(ActionEvent event) throws InvocationTargetException{
