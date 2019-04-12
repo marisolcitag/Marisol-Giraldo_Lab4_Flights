@@ -81,7 +81,7 @@ public class FlightController {
     }
     
     /** Metodo: previousPage(ActionEvent event)
-	 * Descripci髇:Este metodo se encarga de paginar hacia atras los n vuelos que se
+	 * Descripci贸n:Este metodo se encarga de paginar hacia atras los n vuelos que se
 	 * generan<br>
 	 * @param event :ActionEvent
 	 * <b>post: </b>Muestra los n vuelos previos en la Interfaz.
@@ -97,7 +97,7 @@ public class FlightController {
     }
     
     /** Metodo: nextPage(ActionEvent event)
-	 * Descripci髇:Este metodo se encarga de paginar hacia adelante los n vuelos que se
+	 * Descripci贸n:Este metodo se encarga de paginar hacia adelante los n vuelos que se
 	 * generan<br>
 	 * @param event :ActionEvent
 	 * <b>post: </b>Muestra los n vuelos hacia adelante en la Interfaz.
@@ -113,7 +113,7 @@ public class FlightController {
     }
 
     /** Metodo: generateFlights(ActionEvent event)
-	 * Descripci髇:Este metodo se encarga de generar vuelos de manera aleatoria en los VBox<br>
+	 * Descripci贸n:Este metodo se encarga de generar vuelos de manera aleatoria en los VBox<br>
 	 * @param event :ActionEvent
 	 * <b>post: </b>Se genera una lista de vuelos de manera aleatoria en los VBox.
     */
@@ -144,8 +144,8 @@ public class FlightController {
     
     /**
 	 * Metodo: clearTable()
-	 * Descripci髇:Este metodo se encarga de limpiar la informaci髇 en los VBox<br>
-	 * <b>post: </b>La informaci髇 de los VBox se limpia
+	 * Descripci贸n:Este metodo se encarga de limpiar la informaci贸n en los VBox<br>
+	 * <b>post: </b>La informaci贸n de los VBox se limpia
      */
     public void clearTable() {
     	time.getChildren().clear();
@@ -158,7 +158,7 @@ public class FlightController {
     
     /**
 	 * Metodo: showTable()
-	 * Descripci髇:Este metodo se encarga de mostrar la informaci髇 en los VBox<br>
+	 * Descripci贸n:Este metodo se encarga de mostrar la informaci贸n en los VBox<br>
 	 * <b>post: </b>Se puede visualizar la informacion cargada en la tabla.
      */
     public void showTable() {
@@ -187,9 +187,9 @@ public class FlightController {
     // SORT METHODS
     /**
 	 * Metodo: sortByTime(ActionEvent event)
-	 * Descripci髇:Mediante el evento que se produce en el bot髇 TIME en la Interfaz,se muestra la 
-	 * lista de vuelos organizados  invocando el metodo selectionSortTime que ordena mediante el 
-	 * ALGORITMO DE SELECCI覰 <br>
+	 * Descripci贸n:Mediante el evento que se produce en el bot贸n TIME en la Interfaz,se muestra la 
+	 * lista de vuelos organizados  invocando el metodo insertionSortTime que ordena mediante el 
+	 * ALGORITMO DE INSERCION <br>
 	 * @param event:ActionEvent
      * <b>post: </b>Genera la lista de vuelos ordenada por TIME 
      */
@@ -200,6 +200,14 @@ public class FlightController {
     	showTable();
     }
     
+     /**
+	 * Metodo: sortByDate(ActionEvent event)
+	 * Descripci贸n:Mediante el evento que se produce en el bot贸n DATE en la Interfaz,se muestra la 
+	 * lista de vuelos organizados  invocando el metodo insertionSortTime que ordena mediante el 
+	 * ALGORITMO DE INSERCION<br>
+	 * @param event:ActionEvent
+     * <b>post: </b>Genera la lista de vuelos ordenada por TIME 
+     */
     @FXML
     public void sortByDate(ActionEvent event) throws InvocationTargetException{
     	clearTable();
@@ -209,9 +217,9 @@ public class FlightController {
     
     /**
 	 * Metodo: sortByAirline(ActionEvent event)
-	 * Descripci髇:Mediante el evento que se produce en el bot髇 AIRLINE en la Interfaz,se muestra la 
+	 * Descripci贸n:Mediante el evento que se produce en el bot贸n AIRLINE en la Interfaz,se muestra la 
 	 * lista de vuelos organizados  invocando el metodo selectionSortAirline que ordena mediante el 
-	 * ALGORITMO DE SELECCI覰 <br>
+	 * ALGORITMO DE SELECCI脫N <br>
 	 * @param event:ActionEvent
      * <b>post: </b>Genera la lista de vuelos ordenada por AIRLINE 
      */
@@ -224,9 +232,9 @@ public class FlightController {
     
     /**
 	 * Metodo: sortByFlight(ActionEvent event)
-	 * Descripci髇:Mediante el evento que se produce en el bot髇 FLIGHT en la Interfaz,se muestra la 
+	 * Descripci贸n:Mediante el evento que se produce en el bot贸n FLIGHT en la Interfaz,se muestra la 
 	 * lista de vuelos organizados  invocando el metodo selectionSortFlight que ordena mediante el 
-	 * ALGORITMO DE SELECCI覰 <br>
+	 * ALGORITMO DE SELECCI脫N <br>
 	 * @param event:ActionEvent
      * <b>post: </b>Genera la lista de vuelos ordenada por FLIGHT 
      */
@@ -240,9 +248,9 @@ public class FlightController {
     
     /**
 	 * Metodo: sortByDestination(ActionEvent event)
-	 * Descripci髇:Mediante el evento que se produce en el bot髇 DESTINATION en la Interfaz,se muestra la 
+	 * Descripci贸n:Mediante el evento que se produce en el bot贸n DESTINATION en la Interfaz,se muestra la 
 	 * lista de vuelos organizados  invocando el metodo selectionSortDestination que ordena mediante el 
-	 * ALGORITMO DE SELECCI覰 <br>
+	 * ALGORITMO DE SELECCI脫N <br>
 	 * @param event:ActionEvent
      * <b>post: </b>Genera la lista de vuelos ordenada por DESTINATION
      */
@@ -255,7 +263,7 @@ public class FlightController {
     
     /**
 	 * Metodo: sortByGate(ActionEvent event)
-	 * Descripci髇:Mediante el evento que se produce en el bot髇 GATE en la Interfaz,se muestra la 
+	 * Descripci贸n:Mediante el evento que se produce en el bot贸n GATE en la Interfaz,se muestra la 
 	 * lista de vuelos organizados  invocando el metodo bubbleSortGate que ordena mediante el 
 	 * ALGORITMO DE BURBURJA <br>
 	 * @param event:ActionEvent
