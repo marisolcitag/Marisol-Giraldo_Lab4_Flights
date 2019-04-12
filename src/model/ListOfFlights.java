@@ -254,7 +254,8 @@ public class ListOfFlights {
 		
 	/**
 	 * Metodo: searchFlightByAirline( String a )
-	 * Descripción:Este metodo se encargar de buscar un vuelo por AIRLINE <br>
+	 * Descripción:Este metodo se encargar de buscar un vuelo por AIRLINE 
+	 * de FORMA SECUENCIALbr>
 	 * @param a: String
 	 * @return position
 	 * <b>post: </b>Retorna la posicion del AIRLINE que se ingreso como parametro a buscar
@@ -275,6 +276,29 @@ public class ListOfFlights {
 
         return position;
     }
+	
+	/**todo: searchFlightByGate( String a )
+	 * Descripción:Este metodo se encargar de buscar un vuelo por GATE 
+	 * de FORMA SECUENCIALbr>
+	 * @param a: String
+	 * @return position
+	 * <b>post: </b>Retorna la posicion del Gate que se ingreso como parametro a buscar
+    */
+	public int searchFlightByGate( String g ){
+       int position = -1;
+       boolean stop = false;
+
+       for( int i = 0; i < flights.size( ) && !stop; i++ ){
+           Flight f = ( Flight )flights.get( i );
+           String GateF = f.getGate();
+
+           if( GateF.equalsIgnoreCase(g)){
+               position = i;
+               stop = true;
+           }
+       }
+       return position;
+   }
 		
 	//ALGORITHM SORT BINARY
 	public Flight binarySort(String filter, String value){
